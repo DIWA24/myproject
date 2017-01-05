@@ -1,6 +1,9 @@
 package com.backend.configuration;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> initial commit backend
 import java.util.Properties;
 
 import javax.sql.DataSource;
@@ -15,7 +18,11 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+<<<<<<< HEAD
 import com.backend.model.Users;
+=======
+import com.backend.model.Student;
+>>>>>>> initial commit backend
 
 
 @Configuration
@@ -32,7 +39,11 @@ public class ApplicationConfig {
 		driverManagerDataSource.setUsername("sa");
 		driverManagerDataSource.setPassword("sa");
 		driverManagerDataSource.setDriverClassName("org.h2.Driver");
+<<<<<<< HEAD
 		driverManagerDataSource.setUrl("jdbc:h2:tcp://localhost/~/project1");
+=======
+		driverManagerDataSource.setUrl("jdbc:h2:tcp://localhost/~/test");
+>>>>>>> initial commit backend
 		return driverManagerDataSource;
 	}
 	private Properties getProperties()
@@ -49,7 +60,11 @@ public class ApplicationConfig {
 	{
 		 LocalSessionFactoryBuilder localSessionFactoryBuilder=new LocalSessionFactoryBuilder(dataSource);
 		 localSessionFactoryBuilder.addProperties(getProperties());
+<<<<<<< HEAD
 		localSessionFactoryBuilder.addAnnotatedClasses(Users.class);
+=======
+		localSessionFactoryBuilder.addAnnotatedClasses(Student.class);
+>>>>>>> initial commit backend
 		 return localSessionFactoryBuilder.buildSessionFactory();
 	}
 	@Autowired
