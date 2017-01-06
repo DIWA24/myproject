@@ -4,30 +4,32 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import org.hibernate.annotations.Generated;
+
 @Entity
-public class Users {
+public class Employ {
+
 	@Id@GeneratedValue
-	private int userId;
-	private String username;
-	private String password;
+	private int employeeId;	
+	private String ename;
+	private String epassword;
 	public int getUserId() {
-		return userId;
+		return employeeId;
 	}
 	public void setUserId(int userId) {
-		this.userId = userId;
+		this.employeeId = userId;
 	}
 	public String getUsername() {
-		return username;
+		return ename;
 	}
 	public void setUsername(String username) {
-		this.username = username;
+		this.ename = username;
 	}
 	public String getPassword() {
-		return password;
+		return epassword;
 	}
 	public void setPassword(String password) {
-		this.password = password;
+		this.epassword = password;
 	}
 	
-
 }

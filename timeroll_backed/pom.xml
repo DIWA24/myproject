@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.backend</groupId>
-  <artifactId>backend</artifactId>
+  <artifactId>timeroll_backed</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>backend</name>
+  <name>timeroll_backed</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -20,32 +20,34 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
-      
-    </dependency>
-     <dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-core</artifactId>
-    <version>4.3.2.RELEASE</version>
-    </dependency>
-     <dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-context</artifactId>
-    <version>4.3.2.RELEASE</version>
     </dependency>
     <dependency>
     <groupId>org.springframework</groupId>
-    <artifactId>spring-orm</artifactId>
-    <version>4.3.2.RELEASE</version>
+    <artifactId>spring-core</artifactId>
+    <version>4.3.4.RELEASE</version>
     </dependency>
-     <dependency>
+	<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>4.3.4.RELEASE</version>
+    </dependency>
+   <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>4.3.4.RELEASE</version>
+</dependency>
+    <dependency>
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-core</artifactId>
-    <version>4.3.5.Final</version>
+    <version>4.3.5.FINAL</version>
     </dependency>
-     <dependency>
+<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+<dependency>
     <groupId>com.h2database</groupId>
     <artifactId>h2</artifactId>
     <version>1.4.192</version>
 </dependency>
+
   </dependencies>
 </project>
